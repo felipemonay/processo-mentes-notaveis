@@ -19,7 +19,7 @@ class Calculadora {
 
     escolherOperacao(operador){
         if(this.operandoAtual === '') return;
-        if(this.operandoAnterior !== '' && this.operadorAtual !== ''){
+        if(this.operandoAnterior !== '' && this.operandoAtual !== ''){
             this.calcular()
         }
         this.operador = operador;
