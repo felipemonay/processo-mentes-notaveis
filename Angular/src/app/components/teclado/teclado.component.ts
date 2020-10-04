@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-teclado',
-  templateUrl: './teclado.component.html',
-  styleUrls: ['./teclado.component.css']
+  templateUrl: './teclado.component.html'
 })
 export class TecladoComponent implements OnInit {
 

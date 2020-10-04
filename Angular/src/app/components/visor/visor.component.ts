@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-visor',
-  templateUrl: './visor.component.html',
-  styleUrls: ['./visor.component.css']
+  templateUrl: './visor.component.html'
 })
 export class VisorComponent implements OnInit {
 
