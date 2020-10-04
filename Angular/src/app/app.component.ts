@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   textoOperandoAnterior: any;
@@ -33,8 +32,8 @@ export class AppComponent {
 
   escolherOperacao(operador){
       if(this.operandoAtual === '') return;
-      if(this.operandoAnterior !== '' && this.operadorAtual !== ''){
-          this.calcular()
+      if(this.operandoAnterior !== '' && this.operandoAtual !== ''){
+          this.calcular();
       }
       this.operador = operador;
       this.operandoAnterior = this.operandoAtual;
