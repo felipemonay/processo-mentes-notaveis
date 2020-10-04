@@ -74,11 +74,6 @@ class Calculadora {
             this.textoOperandoAnterior.innerText = '';
         }
     }
-
-    equalClear(){
-        this.operandoAnterior = '';
-        this.operandoAtual = '';
-    }
 }
 
 const botoesNumericos = document.querySelectorAll('[data-numero]');
@@ -117,7 +112,6 @@ botoesOperadores.forEach(button => {
 botaoIgual.addEventListener('click', button => {
     calculadora.calcular();
     calculadora.atualizarVisor();
-    valorIgualado = true;
 });
 
 botaoLimpar.addEventListener('click', button => {
