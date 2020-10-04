@@ -1,22 +1,22 @@
 <div class="teclado">
   <button class="vazio"></button>
   <button class="vazio"></button>
-  <button class="operador">C</button>
-  <button class="operador">&#247;</button>
-  <button class="numero">7</button>
-  <button class="numero">8</button>
-  <button class="numero">9</button>
-  <button class="operador">&times;</button>
-  <button class="numero">4</button>
-  <button class="numero">5</button>
-  <button class="numero">6</button>
-  <button class="operador">-</button>
-  <button class="numero">1</button>
-  <button class="numero">2</button>
-  <button class="numero">3</button>
-  <button class="operador">+</button>
+  <button class="operador" (click)="limpar()">C</button>
+  <button class="operador" (click)="escolherOperacao('&#247;')">&#247;</button>
+  <button class="numero" (click)="incluirNumero(7)">7</button>
+  <button class="numero" (click)="incluirNumero(8)">8</button>
+  <button class="numero" (click)="incluirNumero(9)">9</button>
+  <button class="operador" (click)="escolherOperacao('&times;')">&times;</button>
+  <button class="numero" (click)="incluirNumero(4)">4</button>
+  <button class="numero" (click)="incluirNumero(5)">5</button>
+  <button class="numero" (click)="incluirNumero(6)">6</button>
+  <button class="operador" (click)="escolherOperacao('-')">-</button>
+  <button class="numero" (click)="incluirNumero(1)">1</button>
+  <button class="numero" (click)="incluirNumero(2)">2</button>
+  <button class="numero" (click)="incluirNumero(3)">3</button>
+  <button class="operador" (click)="escolherOperacao('+')">+</button>
   <button class="vazio"></button>
-  <button class="numero">0</button>
+  <button class="numero" (click)="incluirNumero(0)">0</button>
   <button class="vazio"></button>
-  <button class="operador">=</button>
+  <button class="operador" (click)="igualar()">=</button>
 </div>

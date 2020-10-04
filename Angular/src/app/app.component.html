@@ -1,4 +1,4 @@
 <div class="calculadora">
-  <app-visor></app-visor>
-  <app-teclado></app-teclado>
+  <app-visor [textoOperandoAtual]="textoOperandoAtual" [textoOperandoAnterior]="textoOperandoAnterior"></app-visor>
+  <app-teclado (limparCalculo)="limpar()" (operacaoEscolhida)="escolherOperacao($event)" (numeroEscolido)="incluirNumero($event)" (resultado)="calcular()"></app-teclado>
 </div>
